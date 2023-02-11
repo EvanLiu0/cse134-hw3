@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evan Liu's Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <svg width="16.3px" height="26.9px">
+          <polygon
+            points="8.1,0 10.3,4.3 15.2,5 11.7,8.3 12.5,13 8.1,10.8 3.8,13 4.6,8.3 1.1,5 6,4.3"
+          />
+        </svg>
+        Evan Liu's Portfolio
+        <svg width="16.3px" height="26.9px">
+          <polygon
+            points="8.1,0 10.3,4.3 15.2,5 11.7,8.3 12.5,13 8.1,10.8 3.8,13 4.6,8.3 1.1,5 6,4.3"
+          />
+        </svg>
+      </h1>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./projects.html">Past Projects</a>
+        <a href="./experiments.html">Experiments</a>
+      </nav>
+    </header>
+    <h2>Contact Me</h2>
+    <!-- div tag chosen over main tag because there is only a single body of textual content on the page, making
+    'main' designation redundant -->
+    <div class="form-container">
+      <!-- The span below will eventually be used to add color and weight to the label when styling is allowed -->
+      <p>
+        I'm always eager to make new connections.
+        <span id="impact">Let's talk!</span>
+      </p>
+      <br />
+      <form method="GET">
+        <fieldset>
+          <legend><b>Contact Form</b></legend>
+          <br />
+          <label for="mtype">Message Type: </label>
+          <select id="mtype" name="mtype">
+            <optgroup label="Inquiries">
+              <option value="General Inquiry">
+                I had a question about something you mentioned...
+              </option>
+              <option value="Job Inquiry">
+                I have an employment proposition...
+              </option>
+            </optgroup>
+            <optgroup label="Support">
+              <option value="Site Down">
+                I'm having technical problems with the site...
+              </option>
+              <option value="Suggestion">
+                I have an idea of how to improve this site...
+              </option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="Other">Other</option>
+            </optgroup>
+          </select>
+          <br />
+          <label for="title">Title: </label>
+          <input list="titles" name="title" id="title" placeholder="Title" />
+          <datalist id="titles">
+            <option value="Mr."></option>
+            <option value="Ms."></option>
+          </datalist>
+
+          <br />
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name" placeholder="Name" />
+          <br />
+          <label for="email">Email: </label>
+          <input type="text" id="email" name="email" placeholder="Email" />
+          <br />
+          <br />
+          <label for="message">Message: </label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Message"
+          ></textarea>
+          <br />
+          <br />
+          <input type="submit" value="Submit" />
+          <br />
+          <br />
+        </fieldset>
+      </form>
+    </div>
+    <br />
+    <hr />
+    <footer>
+      <h3>Let's Get in Touch!</h3>
+      <a href="https://www.linkedin.com/in/evan-liu-195bba22a"> LinkedIn</a>
+      <a href="https://github.com/EvanLiu0">GitHub</a>
+    </footer>
+  </body>
+</html>

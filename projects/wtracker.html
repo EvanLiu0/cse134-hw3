@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evan Liu's Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <svg width="16.3px" height="26.9px">
+          <polygon
+            points="8.1,0 10.3,4.3 15.2,5 11.7,8.3 12.5,13 8.1,10.8 3.8,13 4.6,8.3 1.1,5 6,4.3"
+          />
+        </svg>
+        Evan Liu's Portfolio
+        <svg width="16.3px" height="26.9px">
+          <polygon
+            points="8.1,0 10.3,4.3 15.2,5 11.7,8.3 12.5,13 8.1,10.8 3.8,13 4.6,8.3 1.1,5 6,4.3"
+          />
+        </svg>
+      </h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../projects.html">Past Projects</a>
+        <a href="../experiments.html">Experiments</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Web Scraper</h2>
+      <!-- To be positioned on right side of page once CSS allowed, summary of project objectives as specified by overseer
+        To be styled as example at this page: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside -->
+      <aside>
+        <p>
+          <i>
+            "How might we assist UCSD gym-goers develop and keep track of
+            workout routines that fit their personal needs and capabilities?"
+          </i>
+        </p>
+      </aside>
+      <br />
+      <img
+        src="../assets/images/gym.jpg"
+        width="600"
+        height="400"
+        alt="webscraping graphic"
+      />
+      <br />
+      <p><strong>Objectives</strong></p>
+      <ol>
+        <li>
+          Create a secure, contained means of creating personalized workout
+          routines
+        </li>
+        <li>Enable users to create custom workout plans</li>
+        <li>
+          Provide workout templates for users who are new to the gym or to UCSD
+          gyms in particular
+        </li>
+      </ol>
+      <br />
+      <p><strong>Workout Logging Demo</strong></p>
+      <p>
+        The recording below demonstrates the process by which a user can record
+        the completion of custom exercises.
+      </p>
+      <video width="620" height="440" controls>
+        <source src="../assets/videos/logging-demo.mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <br />
+      <br />
+      <p><strong>Code Snippet Example: Finding Relevant URLs</strong></p>
+      <p>
+        The following code snippet demonstrates the primary way in which the
+        application's frontend interfaces communicates with its backend API.
+        Similar axios calls are used to retrieve user data, record new data, and
+        even load information about different preset exercises that can be
+        recorded. Ever want to learn how to perform a judo flip? One call to the
+        workout API can tell you that information in a matter of seconds.
+        However, it still can't help you perform said flip...
+      </p>
+      <!-- Code snippets to be styled when CSS permitted -->
+      <code>
+        const res = axios .post("http://localhost:8080/api/test/getInfo", {
+        user: String(username), }) .then((response) => {
+        console.log(response.data.message); }) .catch((error) => { if
+        (error.response) { console.log(error.response.data); } });
+      </code>
+      <br />
+      <br />
+      <hr />
+    </main>
+    <footer>
+      <h3>Let's Get in Touch!</h3>
+      <a href="https://www.linkedin.com/in/evan-liu-195bba22a"> LinkedIn</a>
+      <a href="https://github.com/EvanLiu0">GitHub</a>
+    </footer>
+  </body>
+</html>

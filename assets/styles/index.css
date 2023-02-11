@@ -1,0 +1,197 @@
+:root {
+  --primary-text-color: rgb(255, 255, 255);
+  --secondary-text-color: rgb(255, 255, 120);
+  --font-family-main: "Moulpali", serif, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Moulpali";
+  src: url("../fonts/Moulpali/Moulpali-Regular.ttf");
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* nav picture {
+  visibility: hidden;
+  border: 1px solid red;
+}
+
+nav > * + * {
+  visibility: visible;
+  border: 1px solid orange;
+  padding: 0.3rem;
+} */
+
+.nav-container {
+  background: #11213e;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-text-color);
+  padding: 0rem 2rem 1rem 2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .title {
+    font-size: 1rem;
+    padding-top: 50%;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+}
+
+body {
+  background: #11213e;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: var(--font-family-main);
+}
+
+.title {
+  float: left;
+  font-weight: normal;
+  font-family: inherit;
+  padding-top: 1.25%;
+}
+
+nav a {
+  float: right;
+  margin: 0.3rem;
+  position: relative;
+  top: 30%;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  padding: 0rem 0.5rem 0rem;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
+
+main {
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 2rem;
+  color: var(--primary-text-color);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero {
+  animation: fade-in 0.75s;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#hero-body {
+  color: white;
+  position: absolute;
+  /* padding: 3rem 10rem 10rem 10rem; */
+  padding: 3% 10% 10% 10%;
+  font-size: 1rem;
+}
+
+#hero-image {
+  animation: fade-in 0.75s;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(0.3);
+}
+
+.impact {
+  font-size: 13vw;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
+
+h1 a {
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  font-size: 5.5vw;
+  font-family: inherit;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin: 1rem;
+  color: var(--primary-text-color);
+}
+
+main a:visited {
+  color: var(--secondary-text-color);
+}
+
+button {
+  margin-top: 3rem;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--secondary-text-color);
+}
+
+#linkedin {
+  background-image: url("../images/linkedin.webp");
+}
+
+@media screen and (max-width: 750px) {
+  .title {
+    font-size: 1.5rem;
+    padding-top: 3%;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+    padding-top: 1.5%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .title {
+    font-size: 1rem;
+    padding-top: 3%;
+  }
+
+  nav a {
+    font-size: 0.6rem;
+    padding-top: 0.75%;
+  }
+}

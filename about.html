@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evan Liu's Portfolio</title>
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <style>
+      section {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <svg width="16.3px" height="26.9px">
+          <polygon
+            points="8.1,0 10.3,4.3 15.2,5 11.7,8.3 12.5,13 8.1,10.8 3.8,13 4.6,8.3 1.1,5 6,4.3"
+          />
+        </svg>
+        Evan Liu's Portfolio
+        <svg width="16.3px" height="26.9px">
+          <polygon
+            points="8.1,0 10.3,4.3 15.2,5 11.7,8.3 12.5,13 8.1,10.8 3.8,13 4.6,8.3 1.1,5 6,4.3"
+          />
+        </svg>
+      </h1>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./projects.html">Past Projects</a>
+        <a href="./experiments.html">Experiments</a>
+      </nav>
+    </header>
+    <br />
+    <section>
+      <p><strong>About Me</strong></p>
+      <picture>
+        <source
+          media="(max-width: 500px)"
+          srcset="./assets/images/standing.jpg"
+        />
+        <img
+          width="200"
+          height="200"
+          src="./assets/images/profile.jpeg"
+          alt="Profile Picture"
+        />
+      </picture>
+      <pre>
+  Why, hello again! My name is Evan Liu, and I'm currently a third-year
+  undergraduate student at the <strong>University of California, San Diego</strong>.
+  I am currently pursuing a B.S. in <strong>Cognitive Science</strong> with a specialization in
+  <strong>Machine Learning and Neural Computation</strong>, and I am also double minoring in 
+  <strong>Computer Science</strong> and <strong>Design</strong>.
+
+  My drive to pursue a career in software engineering stems from a desire to use technology to
+  meaningfully impact others. Where others see ones and zeros, I look for opportunities to bring 
+  people together and alleviate burdens, and I am always on the lookout for chances to use what 
+  I know about human centered design and programming to make the world a better place.
+
+  <a href="https://docs.google.com/document/d/1mMdKCqzeb7MqkPFgwT_4DmF9OP98qyrYtdr-vhck_bc/edit?usp=share_link">Resume</a>
+      </pre>
+      <details>
+        <summary>Click to Expand Resume Locally</summary>
+        <iframe
+          height="1000"
+          width="800"
+          src="./assets/files/resume.pdf"
+        ></iframe>
+      </details>
+    </section>
+    <br />
+    <section>
+      <p><strong>Skills</strong></p>
+      <p>
+        Here are some of the technical skills I've amassed in my study of
+        software engineering:
+      </p>
+      <table>
+        <!-- i tag chosen for italics over em because i tag implies that instance text is 
+            'set off from normal prose' on the page -->
+        <caption>
+          <b><i>Proficiency List</i></b>
+        </caption>
+        <colgroup>
+          <!-- When we are allowed to style, the following col tags will be used to give
+            the columns in the table below identifiable borders, light colors, and fixed width -->
+          <col class="kind" span="2" />
+          <col class="description" />
+        </colgroup>
+        <!-- Will increase space between columns when styling allowed -->
+        <tr>
+          <th><em>Skill</em></th>
+          <th><em>Years of Experience</em></th>
+          <th><em>Description</em></th>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>8</td>
+          <td>
+            Proficiency With Object-Oriented Design, Polymorphism, Inheritance
+          </td>
+        </tr>
+        <tr>
+          <td>C++</td>
+          <td>3</td>
+          <td>Proficiency Using Pointers in Combination With Classes</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>3</td>
+          <td>
+            Proficiency Using Pointers in Combination With Memory Management
+          </td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>3</td>
+          <td>
+            Used to Develop Complex Web-Based Applications in Professional
+            Context
+          </td>
+        </tr>
+        <tr>
+          <td>Figma</td>
+          <td>3</td>
+          <td>
+            Proficiency in Developing User Interfaces and Website Prototyping
+          </td>
+        </tr>
+        <tr>
+          <td>Android Studio</td>
+          <td>3</td>
+          <td>
+            Proficiency in Developing Complex Mobile Applications Relying on
+            Third Party Navigation APIs
+          </td>
+        </tr>
+      </table>
+    </section>
+    <br />
+    <section>
+      <p><strong>Employment History</strong></p>
+      <p>
+        Click on one of the following menus to learn more about my past work
+        experiences!
+      </p>
+      <details>
+        <summary><strong>Capital One</strong></summary>
+        <p><b>Duration:</b> June 2023 - August 2023</p>
+        <p><b>Position:</b> Software Engineering Intern</p>
+        <p><b>Work Description:</b> Pending</p>
+      </details>
+      <br />
+      <details>
+        <summary><strong>Neon Law Foundation</strong></summary>
+        <p><b>Duration:</b> June 2022 - Present</p>
+        <p><b>Position:</b> Software Engineering Intern</p>
+        <p><b>Work Description:</b></p>
+        <ul>
+          <li>
+            Developed an open-source web-based data scraping application using
+            Python BeautifulSoup library
+          </li>
+          <li>
+            Automated company's email and retail workflows using the Zapier and
+            Front software platforms
+          </li>
+          <li>
+            Hosted seminar at University of California, San Diego on the topic
+            of web scraping
+          </li>
+        </ul>
+      </details>
+      <br />
+      <details>
+        <summary>
+          <strong>St. James Episcopal Church Food Locker</strong>
+        </summary>
+        <p><b>Duration:</b> June 2019 - October 2019</p>
+        <p><b>Position:</b> Intern</p>
+        <p><b>Work Description:</b></p>
+        <ul>
+          <li>
+            Created 2 spreadsheets to track food inventory of the church's food
+            pantry for the year of 2019
+          </li>
+          <li>
+            Proposed and implemented new weekly food distribution quotas in
+            response to past distribution and visitation metrics
+          </li>
+          <li>
+            Coordinated and participated in the church's weekly food
+            distributions serving 30 families weekly
+          </li>
+        </ul>
+      </details>
+      <br />
+      <details>
+        <summary><strong>USC Keck School of Medicine</strong></summary>
+        <p><b>Duration:</b> June 2018 - August 2018</p>
+        <p><b>Position:</b> Intern</p>
+        <p><b>Work Description:</b></p>
+        <ul>
+          <li>
+            Constructed spreadsheets to store academic and graduation-related
+            information of over 24000 USC alumni
+          </li>
+          <li>
+            Digitized and updated university's physical alumni information
+            records spanning from 1970 to 2018 using Excel
+          </li>
+        </ul>
+      </details>
+    </section>
+    <br />
+    <hr />
+    <footer>
+      <h3>Let's Get in Touch!</h3>
+      <a href="https://www.linkedin.com/in/evan-liu-195bba22a"> LinkedIn</a>
+      <a href="https://github.com/EvanLiu0">GitHub</a>
+    </footer>
+  </body>
+</html>
