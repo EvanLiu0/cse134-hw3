@@ -140,7 +140,6 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: normal;
-  margin-bottom: 1rem;
 }
 
 footer {
@@ -168,8 +167,11 @@ button:hover {
   background: var(--secondary-text-color);
 }
 
-#linkedin {
-  background-image: url("../images/linkedin.webp");
+.footer-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 750px) {
