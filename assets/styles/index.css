@@ -1,5 +1,6 @@
 :root {
   --primary-text-color: rgb(255, 255, 255);
+  --nav-text-color: rgb(255, 255, 255);
   --secondary-text-color: rgb(255, 255, 120);
   --font-family-main: "Moulpali", serif, sans-serif;
 }
@@ -40,7 +41,7 @@ nav > * + * {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  color: var(--primary-text-color);
+  color: var(--nav-text-color);
   padding: 0rem 2rem 1rem 2rem;
 }
 
@@ -74,7 +75,7 @@ nav a {
   margin: 0.3rem;
   position: relative;
   top: 30%;
-  color: var(--primary-text-color);
+  color: var(--nav-text-color);
   text-decoration: none;
   padding: 0rem 0.5rem 0rem;
 }
@@ -165,6 +166,10 @@ button {
 
 button:hover {
   background: var(--secondary-text-color);
+}
+
+main a:hover {
+  text-decoration: none;
 }
 
 .footer-icon {
