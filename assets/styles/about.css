@@ -67,17 +67,6 @@ h4 {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 750px) {
-  .title {
-    font-size: 1rem;
-    padding-top: 50%;
-  }
-
-  header nav a {
-    font-size: 0.8rem;
-  }
-}
-
 body {
   background: #ffffff;
   max-width: 100%;
@@ -244,6 +233,8 @@ main div {
 
 #container-nav a {
   color: var(--container-text-color);
+  text-decoration: none;
+  margin: 0.5rem 0rem;
 }
 
 #container-nav a:hover {
@@ -299,6 +290,11 @@ em {
   color: var(--secondary-text-color);
 }
 
-h4 + p {
-  margin-bottom: 3rem;
+p + hr {
+  color: var(--secondary-text-color);
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+.active {
+  color: var(--secondary-text-color) !important;
 }

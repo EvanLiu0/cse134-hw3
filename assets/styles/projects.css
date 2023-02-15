@@ -1,5 +1,5 @@
 :root {
-  --primary-text-color: rgb(0, 0, 0);
+  --primary-text-color: rgb(255, 255, 255);
   --primary-body-color: #11213e;
   --nav-text-color: rgb(255, 255, 255);
   --secondary-text-color: rgb(255, 255, 120);
@@ -42,24 +42,8 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  color: var(--primary-text-color);
+  color: var(--nav-text-color);
   padding: 0rem 2rem 1rem 2rem;
-}
-
-h1 a {
-  font-weight: normal;
-  text-decoration: none;
-  color: white;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 5vw;
-  line-height: 5rem;
-}
-
-h3 {
-  color: white;
 }
 
 @media screen and (max-width: 750px) {
@@ -74,15 +58,9 @@ h3 {
 }
 
 body {
-  background: #ffffff;
   max-width: 100%;
   overflow-x: hidden;
   font-family: var(--font-family-main);
-}
-
-main {
-  padding: 2rem;
-  animation: fade-in 0.75s;
 }
 
 .title {
@@ -107,36 +85,13 @@ nav a:hover {
   color: var(--secondary-text-color);
 }
 
-footer {
+main {
+  animation: fade-in 0.75s;
+  width: 100%;
+  height: 130vh;
   color: var(--primary-text-color);
-  background-color: #11213e;
-  padding: 0.4rem 1rem 1rem 1rem;
-}
-
-fieldset {
+  box-sizing: border-box;
   padding: 2rem;
-  border: 2px solid black;
-  border-radius: 3rem;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--primary-body-color);
-  color: rgb(255, 255, 255);
-}
-
-button {
-  margin-top: 3rem;
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: none;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background: var(--secondary-text-color);
 }
 
 .footer-icon {
@@ -144,61 +99,6 @@ button:hover {
   height: 1.5rem;
   margin-right: 1rem;
   cursor: pointer;
-}
-
-select {
-  width: 50%;
-  padding: 0.5rem;
-  margin-left: 0.5rem;
-  font-size: 0.65rem;
-}
-
-legend {
-  width: auto;
-  margin: 0rem auto 0rem;
-  font-size: 1.5rem;
-  background-color: #669bff;
-}
-
-label {
-  color: var(--secondary-text-color);
-}
-
-.label-input-container {
-  margin: 1rem 0rem 1rem 0rem;
-}
-
-.label-input-container input {
-  margin: 0rem 0rem 0rem 0.5rem;
-  width: 50%;
-  padding: 0.5rem;
-  font-size: 0.65rem;
-}
-
-.label-input-container textarea {
-  margin: 0rem 0rem 0rem 0.5rem;
-  width: 20rem;
-  height: 12rem;
-  padding: 1rem;
-}
-
-input[type="submit"] {
-  margin: 2rem 0rem 1.5rem;
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: none;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#form-title-contact {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 1rem 0rem 1rem 0rem;
-  text-align: center;
 }
 
 @media screen and (max-width: 750px) {
@@ -225,11 +125,83 @@ input[type="submit"] {
   }
 }
 
-form {
-  max-width: 75ch;
-  margin: 3rem auto;
-}
-
 .active {
   color: var(--secondary-text-color) !important;
+}
+
+.footer-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  color: var(--primary-text-color);
+  background-color: var(--primary-body-color);
+  padding: 0.4rem 1rem 1rem 1rem;
+}
+
+h1 a {
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  font-weight: bold;
+  color: black;
+  font-size: 5.5vw;
+  font-family: inherit;
+}
+
+main figure {
+  display: flex;
+  flex-direction: row;
+  color: black;
+}
+
+#image-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+figcaption {
+  width: 70%;
+  max-width: 110ch;
+  background-color: #11213e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 2rem;
+}
+
+figcaption h4 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+}
+
+figcaption p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: white;
+}
+
+p a {
+  text-decoration: none;
+}
+
+h4 a:visited {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+}
+
+p a:visited {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: white;
 }

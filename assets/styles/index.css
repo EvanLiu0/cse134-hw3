@@ -185,7 +185,7 @@ main a:hover {
     padding-top: 3%;
   }
 
-  nav a {
+  header nav a {
     font-size: 0.8rem;
     padding-top: 1.5%;
   }
@@ -197,8 +197,12 @@ main a:hover {
     padding-top: 3%;
   }
 
-  nav a {
+  header nav a {
     font-size: 0.6rem;
     padding-top: 0.75%;
   }
+}
+
+.active {
+  color: var(--secondary-text-color) !important;
 }

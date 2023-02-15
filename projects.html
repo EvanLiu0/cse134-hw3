@@ -5,66 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evan Liu's Portfolio</title>
+    <link rel="stylesheet" href="./assets/styles/projects.css" />
   </head>
   <body>
-    <header>
-      <h1>
-        <svg width="16.3px" height="26.9px">
-          <polygon
-            points="8.1,0 10.3,4.3 15.2,5 11.7,8.3 12.5,13 8.1,10.8 3.8,13 4.6,8.3 1.1,5 6,4.3"
-          />
-        </svg>
-        Evan Liu's Portfolio
-        <svg width="16.3px" height="26.9px">
-          <polygon
-            points="8.1,0 10.3,4.3 15.2,5 11.7,8.3 12.5,13 8.1,10.8 3.8,13 4.6,8.3 1.1,5 6,4.3"
-          />
-        </svg>
+    <header class="nav-container">
+      <h1 class="title">
+        <a href="./index.html">Evan Liu's Portfolio</a>
       </h1>
       <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./projects.html">Past Projects</a>
+        <!-- <picture
+          ><img src="./assets/images/hamburger.png" alt="Hamburger Menu"
+        /></picture> -->
         <a href="./experiments.html">Experiments</a>
+        <a class="active" href="./projects.html">Past Projects</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./about.html">About</a>
+        <a href="./index.html">Home</a>
       </nav>
     </header>
     <main>
       <h2>Projects</h2>
-      <br />
-      <!-- Constructed canvases will eventually become more complicated shapes after CSS and JS are allowed
-      Some of the desired changes include: increasing the distance between each canvas, making each clickable,
-      using custom colors, adding on-hover effects, longer descriptions of each project, and making each more interesting
-      shapes (see figma) -->
-      <canvas id="myCanvas"> Your browser doesn't support canvas. </canvas>
-      <script>
-        // 12 script lines used out of 15 permitted
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        ctx.fillStyle = "red";
-        ctx.fillRect(20, 0, 75, 2000);
-        ctx.fillStyle = "yellow";
-        ctx.fillRect(120, 0, 75, 2000);
-        ctx.fillStyle = "green";
-        ctx.fillRect(220, 0, 75, 2000);
-        ctx.fillStyle = "black";
-        ctx.fillText("Zoo Navigation App", 15, 50);
-        ctx.fillText("Web Scraper", 128, 50);
-        ctx.fillText("Workout Tracker", 221, 50);
-      </script>
-      <br />
-      <!-- Temporary Navigation Links to Individual Projects: -->
-      <ol>
-        <li><a href="./projects/zooseeker.html">Zoo Navigation App</a></li>
-        <li><a href="./projects/scraper.html">Web Scraper</a></li>
-        <li><a href="./projects/wtracker.html">Workout Tracker</a></li>
-      </ol>
-      <hr />
+      <div id="image-container">
+        <figure>
+          <img
+            src="./assets/images/webscraping.jpg"
+            alt="Webscraping Graphic"
+            width="200"
+            height="200"
+          />
+          <figcaption>
+            <h4>
+              <a href="./projects/scraper.html">Beautiful Soup Web Scraper</a>
+            </h4>
+            <p>
+              <a href="./projects/scraper.html">
+                A Python-based application for combing the internet and
+                compiling personally-identifying information
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="./assets/images/gym.jpg"
+            alt="Gym Floor"
+            width="200"
+            height="200"
+          />
+          <figcaption>
+            <h4>
+              <a href="./projects/wtracker.html">Workout Tracker Web App</a>
+            </h4>
+            <p>
+              <a href="./projects/wtracker.html"
+                >A gym-side assistant for logging exercise routines and guiding
+                new gym bros</a
+              >
+            </p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="./assets/images/zoo.jpg"
+            alt="Zoo Entrance"
+            width="200"
+            height="200"
+          />
+          <figcaption>
+            <h4>
+              <a href="./projects/zooseeker.html">Zoo Navigation Assistant</a>
+            </h4>
+            <p>
+              <a href="./projects/zooseeker.html">
+                An Android mobile app for keeping track of travel itineraries
+                and charting optimal routes through exhibits
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+      </div>
     </main>
     <footer>
-      <h3>Let's Get in Touch!</h3>
-      <a href="https://www.linkedin.com/in/evan-liu-195bba22a"> LinkedIn</a>
-      <a href="https://github.com/EvanLiu0">GitHub</a>
+      <div id="footer-text">
+        <h3>Let's Get in Touch!</h3>
+        <!-- Image Credit: https://iconsplace.com/white-icons/linkedin-icon-18/ -->
+        <!-- Image Credit: https://iconsplace.com/white-icons/linkedin-icon-18/ -->
+        <a href="https://www.linkedin.com/in/evan-liu-195bba22a"
+          ><img
+            class="footer-icon"
+            src="./assets/images/linkedin-white.webp"
+            alt="Linkedin Logo"
+        /></a>
+        <!-- Image Credit: https://www.pngkey.com/maxpic/u2w7q8w7a9u2r5t4/ -->
+        <a href="https://github.com/EvanLiu0"
+          ><image
+            class="footer-icon"
+            src="./assets/images/github-white.webp"
+            alt="GitHub Logo"
+        /></a>
+      </div>
     </footer>
   </body>
 </html>
