@@ -4,29 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="../assets/styles/zooseeker.css" />
     <title>Evan Liu's Portfolio</title>
   </head>
   <body>
-    <header>
-      <h1>
-        <svg width="16.3px" height="26.9px">
-          <polygon
-            points="8.1,0 10.3,4.3 15.2,5 11.7,8.3 12.5,13 8.1,10.8 3.8,13 4.6,8.3 1.1,5 6,4.3"
-          />
-        </svg>
-        Evan Liu's Portfolio
-        <svg width="16.3px" height="26.9px">
-          <polygon
-            points="8.1,0 10.3,4.3 15.2,5 11.7,8.3 12.5,13 8.1,10.8 3.8,13 4.6,8.3 1.1,5 6,4.3"
-          />
-        </svg>
+    <header class="nav-container">
+      <h1 class="title">
+        <a href="./index.html">Evan Liu's Portfolio</a>
       </h1>
       <nav>
-        <a href="../index.html">Home</a>
-        <a href="../about.html">About</a>
+        <!-- <picture
+          ><img src="./assets/images/hamburger.png" alt="Hamburger Menu"
+        /></picture> -->
+        <a class="active" href="../projects.html">Past Projects</a>
         <a href="../contact.html">Contact</a>
-        <a href="../projects.html">Past Projects</a>
-        <a href="../experiments.html">Experiments</a>
+        <a href="../about.html">About</a>
+        <a href="../index.html">Home</a>
       </nav>
     </header>
     <main>
@@ -37,18 +31,11 @@
         <p>
           <i>
             "How might we assist new visitors of the San Diego Zoo in deciding
-            what exhibits<br />to see and how to navigate to each one?"
+            what exhibits to see and how to navigate to each one?"
           </i>
         </p>
       </aside>
-      <br />
-      <img
-        src="../assets/images/zoo.jpg"
-        width="600"
-        height="400"
-        alt="webscraping graphic"
-      />
-      <br />
+      <img src="../assets/images/zoo.jpg" alt="Zoo Entrance Graphic" />
       <p><strong>Objectives</strong></p>
       <ol>
         <li>
@@ -64,13 +51,11 @@
           summarize found identity
         </li>
       </ol>
-      <br />
-      <br />
       <p><strong>Primary User Interfaces</strong></p>
       <p>
         The following user interfaces, whose functions are outlined below, were
-        constructed using Android Studio. <br />While the implementation details
-        of each cannot be expanded upon due to academic integrity concerns, both
+        constructed using Android Studio. While the implementation details of
+        each cannot be expanded upon due to academic integrity concerns, both
         user interfaces rely on frontends composed primarily of HTML-like tags
         and CSS-like styling, as well as backends that utilize calls to a local
         database to store and retrieve user data, as well as those of the zoo's
@@ -86,25 +71,38 @@
           height="600"
           alt="URL results display"
         />
+        <figcaption>
+          <b>Figure 1:</b> Home page for planning exhibit itinerary <br />
+        </figcaption>
+      </figure>
+      <figure>
         <img
           src="../assets/images/zooseeker-plan.jpg"
           width="350"
           height="600"
           alt="URL results display"
         />
-        <br />
         <figcaption>
-          <b>Left:</b> Home page for planning exhibit itinerary <br />
-          <b>Right:</b> Directions page for navigating between exhibits
+          <b>Figure 2:</b> Directions page for navigating between exhibits
         </figcaption>
       </figure>
-      <br />
-      <hr />
     </main>
     <footer>
       <h3>Let's Get in Touch!</h3>
-      <a href="https://www.linkedin.com/in/evan-liu-195bba22a"> LinkedIn</a>
-      <a href="https://github.com/EvanLiu0">GitHub</a>
+      <!-- Image Credit: https://iconsplace.com/white-icons/linkedin-icon-18/ -->
+      <a href="https://www.linkedin.com/in/evan-liu-195bba22a"
+        ><img
+          class="footer-icon"
+          src="../assets/images/linkedin-white.webp"
+          alt="Linkedin Logo"
+      /></a>
+      <!-- Image Credit: https://www.pngkey.com/maxpic/u2w7q8w7a9u2r5t4/ -->
+      <a href="https://github.com/EvanLiu0"
+        ><image
+          class="footer-icon"
+          src="../assets/images/github-white.webp"
+          alt="GitHub Logo"
+      /></a>
     </footer>
   </body>
 </html>

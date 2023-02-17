@@ -26,15 +26,15 @@
 }
 
 /* nav picture {
-      visibility: hidden;
-      border: 1px solid red;
-    }
-    
-    nav > * + * {
-      visibility: visible;
-      border: 1px solid orange;
-      padding: 0.3rem;
-    } */
+          visibility: hidden;
+          border: 1px solid red;
+        }
+        
+        nav > * + * {
+          visibility: visible;
+          border: 1px solid orange;
+          padding: 0.3rem;
+        } */
 
 /** Nav Stuff **/
 .nav-container {
@@ -90,39 +90,86 @@ nav a:hover {
     padding: 0.5rem 0rem 0.5rem 1rem;
   }
 
-  section p {
-    font-size: 1rem;
+  #image-container {
+    gap: 0.5rem !important;
   }
 
-  summary,
-  details li,
-  details p {
+  figure img {
+    margin-top: 2rem !important;
+    width: 30ch !important;
+    height: 55ch !important;
+  }
+
+  aside p {
+    margin-bottom: 0.5rem !important;
+  }
+
+  main p,
+  ol,
+  figcaption {
     font-size: 0.8rem !important;
+  }
+
+  code {
+    font-size: 0.5rem !important;
+  }
+
+  main section {
+    max-width: 60ch !important;
+    margin-left: 0.5rem !important;
+  }
+
+  aside + img {
+    width: 400px !important;
+    height: 300px !important;
   }
 }
 
 @media screen and (max-width: 500px) {
   .title {
-    font-size: 0.9rem;
-    padding-top: 2%;
+    font-size: 0.9rem !important;
+    padding-top: 2% !important;
   }
 
   header nav a {
-    font-size: 0.65rem;
+    font-size: 0.65rem !important;
   }
 
   nav {
-    padding: 0.6rem 0 0 0;
+    padding: 0.6rem 0 0 0 !important;
   }
 
-  section p {
-    font-size: 1rem;
+  /* main {
+      height: 90vh;
+    } */
+
+  figure img {
+    width: 26ch !important;
+    height: 42ch !important;
   }
 
-  summary,
-  details li,
-  details p {
+  aside p {
+    margin-bottom: 0.2rem !important;
+  }
+
+  main p,
+  ol,
+  figcaption {
     font-size: 0.7rem !important;
+  }
+
+  code {
+    font-size: 0.4rem !important;
+  }
+
+  main section {
+    margin-left: 1rem !important;
+    max-width: 45ch !important;
+  }
+
+  aside + img {
+    width: 320px !important;
+    height: 225px !important;
   }
 }
 /***************/
@@ -136,6 +183,7 @@ h1 a {
 h2 {
   font-weight: bold;
   font-size: 5vw;
+  line-height: 2 !important;
 }
 
 h3 {
@@ -156,7 +204,9 @@ body {
 }
 
 main {
-  padding: 2rem 2rem 2rem 2rem;
+  animation: fade-in 0.75s;
+  padding: 2rem;
+  padding-right: 9rem !important;
 }
 
 footer {
@@ -170,54 +220,10 @@ button:hover {
 }
 
 .footer-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 1rem;
-  cursor: pointer;
-}
-
-select {
-  width: 50%;
-  padding: 0.5rem;
-  margin-left: 0.5rem;
-  font-size: 0.65rem;
-}
-
-.label-input-container {
-  margin: 1rem 0rem 1rem 0rem;
-}
-
-.label-input-container input {
-  margin: 0rem 0rem 0rem 0.5rem;
-  width: 50%;
-  padding: 0.5rem;
-  font-size: 0.65rem;
-}
-
-.label-input-container textarea {
-  margin: 0rem 0rem 0rem 0.5rem;
-  width: 20rem;
-  height: 12rem;
-  padding: 1rem;
-}
-
-input[type="submit"] {
-  margin: 2rem 0rem 1.5rem;
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: none;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#form-title-contact {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 1rem 0rem 1rem 0rem;
-  text-align: center;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  margin-right: 1rem !important;
+  cursor: pointer !important;
 }
 
 section {
@@ -232,73 +238,6 @@ section p {
 
 section a:hover {
   text-decoration: none;
-}
-
-summary:hover {
-  cursor: pointer;
-}
-
-form {
-  max-width: 75ch;
-  margin: 3rem auto;
-}
-
-main div {
-  animation: fade-in 0.75s;
-  background-color: #11213e;
-  max-width: 130ch;
-}
-
-#about-container {
-  display: flex;
-  flex-direction: row;
-  min-width: 330px;
-}
-
-#about-container p {
-  color: var(--container-text-color);
-}
-
-#container-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 2rem 1rem 2rem 1rem;
-  font-size: 1rem;
-}
-
-#container-nav a {
-  color: var(--container-text-color);
-  text-decoration: none;
-  margin: 0.5rem 0rem;
-}
-
-#container-nav a:hover {
-  text-decoration: none;
-}
-
-#container-nav a:visited {
-  color: var(--container-text-color);
-}
-
-table {
-  color: var(--container-text-color);
-  text-align: center;
-  border-spacing: 2rem;
-  border-collapse: collapse;
-  border: 2px solid var(--secondary-text-color);
-}
-
-table th {
-  font-weight: bold;
-  padding: 1.5rem;
-  width: 30%;
-}
-
-th,
-td {
-  border: 3px solid var(--secondary-text-color);
-  padding: 0.1rem;
 }
 
 caption {
@@ -316,12 +255,6 @@ details p {
   margin-left: 2rem;
 }
 
-details li {
-  color: var(--container-text-color);
-  margin-left: 4rem;
-  font-size: 1rem;
-}
-
 em {
   font-style: normal;
   color: var(--secondary-text-color);
@@ -334,4 +267,41 @@ p + hr {
 
 .active {
   color: var(--secondary-text-color) !important;
+}
+
+aside p {
+  margin-bottom: 2rem;
+}
+
+aside + img {
+  margin: 1rem auto !important;
+  width: 600px;
+  height: 400px;
+}
+
+ol {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+video {
+  margin: 2.5rem 2rem 0.5rem 3rem;
+  width: 80%;
+  max-width: 60ch;
+}
+
+main section {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: lightgray;
+  max-width: 80ch;
+  overflow: scroll;
+}
+
+code {
+  font-size: 0.6rem;
+}
+
+figure img {
+  margin-top: 2rem !important;
 }

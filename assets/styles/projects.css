@@ -36,6 +36,7 @@
     padding: 0.3rem;
   } */
 
+/** Nav Stuff **/
 .nav-container {
   background: #11213e;
   width: 100%;
@@ -43,41 +44,25 @@
   display: flex;
   justify-content: space-between;
   color: var(--nav-text-color);
-  padding: 0rem 2rem 1rem 2rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
-@media screen and (max-width: 750px) {
-  .title {
-    font-size: 1rem;
-    padding-top: 50%;
-  }
-
-  nav a {
-    font-size: 0.8rem;
-  }
-}
-
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-  font-family: var(--font-family-main);
+nav {
+  padding: 1.1rem 0 0 0;
 }
 
 .title {
   float: left;
   font-weight: normal;
   font-family: inherit;
-  padding-top: 1.25%;
 }
 
 nav a {
   float: right;
-  margin: 0.3rem;
+  margin: 0rem 1rem;
   position: relative;
-  top: 30%;
   color: var(--nav-text-color);
   text-decoration: none;
-  padding: 0rem 0.5rem 0rem;
 }
 
 nav a:hover {
@@ -85,10 +70,110 @@ nav a:hover {
   color: var(--secondary-text-color);
 }
 
+@media screen and (max-width: 730px) {
+  .title {
+    font-size: 1.5rem;
+    padding-top: 1.5%;
+  }
+
+  header nav a {
+    font-size: 0.8rem;
+    padding-top: 0.5%;
+    margin: 0rem 0.6rem;
+  }
+
+  .nav-container {
+    padding: 0.5rem 0rem 0.5rem 1rem;
+  }
+
+  main {
+    height: 100vh !important;
+  }
+
+  figure {
+    transform: scale(0.8);
+    min-width: 30ch;
+    max-height: 27ch;
+  }
+
+  #image-container {
+    gap: 0.5rem !important;
+  }
+
+  main figure:hover {
+    transform: scale(1) !important;
+  }
+
+  figcaption p {
+    font-size: 0.8rem !important;
+  }
+
+  figcaption h4 {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 0.9rem;
+    padding-top: 2%;
+  }
+
+  header nav a {
+    font-size: 0.65rem;
+  }
+
+  nav {
+    padding: 0.6rem 0 0 0 !important;
+  }
+
+  main {
+    height: 90vh !important;
+  }
+
+  figure {
+    transform: scale(0.8);
+  }
+
+  #image-container {
+    width: 120%;
+    gap: 0rem !important;
+  }
+
+  main figure:hover {
+    transform: scale(1) !important;
+  }
+
+  figcaption p {
+    font-size: 0.8rem !important;
+    text-align: center;
+  }
+
+  figcaption h4 {
+    font-size: 0.8rem !important;
+    text-align: center;
+  }
+
+  figure img {
+    width: 0 !important;
+  }
+}
+
+nav {
+  padding: 1.1rem 0 0 0;
+}
+/***************/
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: var(--font-family-main);
+}
+
 main {
   animation: fade-in 0.75s;
   width: 100%;
-  height: 130vh;
+  height: 120vh;
   color: var(--primary-text-color);
   box-sizing: border-box;
   padding: 2rem;
@@ -99,30 +184,6 @@ main {
   height: 1.5rem;
   margin-right: 1rem;
   cursor: pointer;
-}
-
-@media screen and (max-width: 750px) {
-  .title {
-    font-size: 1.5rem;
-    padding-top: 3%;
-  }
-
-  header nav a {
-    font-size: 0.8rem;
-    padding-top: 1.5%;
-  }
-}
-
-@media screen and (max-width: 630px) {
-  .title {
-    font-size: 1rem;
-    padding-top: 3%;
-  }
-
-  header nav a {
-    font-size: 0.6rem;
-    padding-top: 0.75%;
-  }
 }
 
 .active {
@@ -159,13 +220,19 @@ main figure {
   display: flex;
   flex-direction: row;
   color: black;
+  transition: 0.5s;
+  max-width: 130ch;
+}
+
+main figure:hover {
+  transform: scale(1.05);
 }
 
 #image-container {
   height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 2rem;
 }
 
 figcaption {
@@ -175,18 +242,26 @@ figcaption {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 2rem;
+  padding: 1rem 1.5rem;
+}
+
+figure img {
+  width: 40%;
 }
 
 figcaption h4 {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: var(--secondary-text-color);
+}
+
+figcaption a:hover {
+  text-decoration: none;
 }
 
 figcaption p {
   margin-top: 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: white;
 }
 
