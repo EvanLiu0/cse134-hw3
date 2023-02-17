@@ -304,4 +304,6 @@ code {
 
 figure img {
   margin-top: 2rem !important;
+  width: 350px;
+  height: 600px;
 }

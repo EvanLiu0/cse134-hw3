@@ -292,4 +292,6 @@ code {
 
 figure img {
   margin-top: 2rem !important;
+  width: 600px;
+  height: 400px;
 }

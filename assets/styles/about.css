@@ -335,3 +335,8 @@ p + hr {
 .active {
   color: var(--secondary-text-color) !important;
 }
+
+picture img {
+  width: 200px;
+  height: 200px;
+}
