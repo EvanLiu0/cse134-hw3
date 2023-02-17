@@ -266,20 +266,15 @@ figcaption p {
   color: white;
 }
 
-p a {
-  text-decoration: none;
-  margin-top: 1rem;
-  font-size: 0.8rem;
-  color: white;
-}
-
-h4 a {
+h4 a,
+h4 a:visited {
   text-decoration: none;
   margin-top: 1rem;
   font-size: 1.1rem;
   color: var(--secondary-text-color);
 }
 
+p a,
 p a:visited {
   text-decoration: none;
   margin-top: 1rem;
