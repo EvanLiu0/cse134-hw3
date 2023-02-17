@@ -101,7 +101,7 @@ nav a:hover {
   }
 
   main figure:hover {
-    transform: scale(1) !important;
+    transform: scale(0.9) !important;
   }
 
   figcaption p {
@@ -141,7 +141,7 @@ nav a:hover {
   }
 
   main figure:hover {
-    transform: scale(1) !important;
+    transform: scale(0.9) !important;
   }
 
   figcaption p {
@@ -222,6 +222,7 @@ main figure {
   color: black;
   transition: 0.5s;
   max-width: 130ch;
+  margin: 0 3rem;
 }
 
 main figure:hover {
